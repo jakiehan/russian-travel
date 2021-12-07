@@ -1,0 +1,52 @@
+.cover__link {
+  max-width: 1184px;
+  min-height: 740px;
+  background-image: url(../../../images/cover-image.jpg);
+  background-size: cover;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__link::before {
+  content: "";
+  background-color: #2A2C2F;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.cover__link:hover::before {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1140px) {
+  .cover__link {
+    max-width: 1024px;
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .cover__link {
+    max-width: 768px;
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .cover__link {
+    max-width: 320px;
+    min-height: 200px;
+  }
+}

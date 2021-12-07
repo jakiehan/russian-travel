@@ -1,0 +1,11 @@
+.place__text {
+  width: 100%;
+  grid-area: text;
+}
+
+@media screen and (max-width: 720px) {
+  .place__text {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}
