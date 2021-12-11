@@ -1,3 +1,9 @@
-.footer_nav {
+.footer__nav {
   max-width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .footer__nav {
+    margin-left: 16px;
+  }
 }

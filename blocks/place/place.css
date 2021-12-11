@@ -39,5 +39,6 @@
     "text";
     row-gap: 32px;
     margin: 0 0 50px;
+    justify-content: center;
   }
 }
